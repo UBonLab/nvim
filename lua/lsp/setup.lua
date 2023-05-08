@@ -58,6 +58,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 local servers = {
   lua_ls = require("lsp.config.lua"),
+  gopls = require("lsp.config.gopls"),
 }
 
 for name, config in pairs(servers) do
